@@ -96,12 +96,28 @@
 
   <br>
   <li> <b> SQ Lower Bounds for Learning Single Neurons with Massart Noise </b>
-  <br> <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
-       <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>,
-       Lisheng Ren,
-       and
-       <a href="https://pages.cs.wisc.edu/~yxsun/">Yuxin Sun</a>
-  <br> <i> Advances in Neural Information Processing Systems (NeurIPS 2022) </i>
+    <a class= 'abstract_link' onclick= "reveal_abstract('paper2abs')">[abstract]</a>
+    <a href="https://arxiv.org/abs/2210.09949">[arxiv]</a>
+    <br> <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
+      <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>,
+      Lisheng Ren,
+      and
+      <a href="https://pages.cs.wisc.edu/~yxsun/">Yuxin Sun</a>
+    <br> <i> Advances in Neural Information Processing Systems (NeurIPS 2022) </i>
+    <div id="paper2abs" style="display:none" class='abstract'>
+    We study the problem of PAC learning a single neuron in the presence of Massart noise. 
+    Specifically, for a known activation function $f: \mathbb{R} \to \mathbb{R}$, the learner is given
+    access to labeled examples $({\bf x}, y) \in \mathbb{R}^d \times \mathbb{R}$, where the marginal distribution of ${\bf x}$ is
+    arbitrary and the corresponding label $y$ is a Massart corruption of $f(\langle {\bf w}, {\bf x} \rangle)$.
+    The goal of the learner is to output a hypothesis $h: \mathbb{R}^d \to \mathbb{R}$ with small squared loss.
+    For a range of activation functions, including ReLUs,
+    we establish super-polynomial Statistical Query (SQ) lower bounds for this learning problem.
+    In more detail, we prove that no efficient SQ algorithm can approximate
+    the optimal error within any constant factor.
+    Our main technical contribution is a novel SQ-hard construction
+    for learning $\{ \pm 1\}$-weight Massart halfspaces on the Boolean hypercube
+    that is interesting on its own right.
+    </div>
   </li>
 
   <br>
