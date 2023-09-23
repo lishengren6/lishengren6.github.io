@@ -63,12 +63,35 @@
 
 <h2 style="clear: both;">Publications</h2>
 <ol>
+  <li> <b> SQ Lower Bounds for Non-Gaussian Component Analysis with Weaker Assumptions </b>
+  <a class= 'abstract_link' onclick= "reveal_abstract('paper5abs')">[abstract]</a>
+  <br> <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
+    <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>,
+    Lisheng Ren,
+    and
+    <a href="https://pages.cs.wisc.edu/~yxsun/">Yuxin Sun</a>
+  <br> <i> To appear in Advances in Neural Information Processing Systems (NeurIPS 2023) </i>
+  <div id="paper5abs" style="display:none" class='abstract'>
+  We study the complexity of Non-Gaussian Component Analysis (NGCA) in the Statistical Query (SQ) model.
+  Prior work developed a methodology to prove SQ lower bounds for NGCA that have been applicable to a wide range of contexts.
+  In particular, it was known that for any univariate distribution $A$ satisfying certain conditions,
+  distinguishing between a standard multivariate Gaussian and a distribution
+  that behaves like $A$ in a random hidden direction and like a standard Gaussian in the orthogonal complement, is SQ-hard.
+  The required conditions were that (1) $A$ matches many low-order moments with a standard Gaussian,
+  and (2) the chi-squared norm of $A$ with respect to the standard Gaussian is finite.
+  While the moment-matching condition is clearly necessary for hardness, the chi-squared condition was only required for technical reasons.
+  In this work, we establish that the latter condition is indeed not necessary.
+  In particular, we prove near-optimal SQ lower bounds for NGCA under the moment-matching condition only.
+  </div>
+  </li>
+
+  <br>
   <li> <b> Near-Optimal Cryptographic Hardness of Agnostically Learning Halfspaces and ReLU Regression under Gaussian Marginals </b>
   <a class= 'abstract_link' onclick= "reveal_abstract('paper4abs')">[abstract]</a>
   <a href="https://arxiv.org/abs/2302.06512">[arxiv]</a>
   <br> <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
        <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a>, and Lisheng Ren
-  <br> <i> To appear in Advances in International Conference on Machine Learning (ICML 2023) </i>
+  <br> <i> Advances in International Conference on Machine Learning (ICML 2023) </i>
   <div id="paper4abs" style="display:none" class='abstract'>
   We study the task of agnostically learning halfspaces under the Gaussian distribution.
   Specifically, given labeled examples $(\mathbf{x},y)$ from an unknown distribution on $\mathbb{R}^n \times \{\pm 1 \}$,
