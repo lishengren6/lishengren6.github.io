@@ -63,6 +63,34 @@
 
 <h2 style="clear: both;">Publications</h2>
 <ol>
+  <li> <b> Fast Co-Training under Weak Dependence via Stream-Based Active Learning </b>
+  <a class= 'abstract_link' onclick= "reveal_abstract('paper6abs')">[abstract]</a>
+  <br>
+    <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
+    <a href="https://mmingchen.github.io/">Mingchen Ma</a>,
+    Lisheng Ren,
+    and
+    <a href="https://tzamos.com/">Christos Tzamos</a>
+  <br> <i> To appear in Advances in International Conference on Machine Learning (ICML 2024) </i>
+  <br> <i> Selected for Oral Presentation </i>
+  <div id="paper6abs" style="display:none" class='abstract'>
+  Co-training is a classical semi-supervised learning method which only requires a small number of labeled examples for learning,
+  under reasonable assumptions. Despite extensive literature on the topic,
+  very few hypothesis classes are known to be provably efficiently learnable via co-training,
+  even under very strong distributional assumptions.
+  In this work, we study the co-training problem in the stream-based active learning model.
+  We show that a range of natural concept classes are efficiently learnable via co-training, in terms of both label efficiency and computational efficiency.
+
+  We provide an efficient reduction of co-training under the standard assumption of weak dependence, in the stream-based active model, to online classification.
+  As a corollary, we obtain efficient co-training algorithms with error independent label complexity for every concept class class efficiently learnable in the mistake bound online model.
+  Our framework also gives co-training algorithms with label complexity $\tilde{O}(d\log (1/\epsilon))$ for any concept class with VC dimension $d$,
+  though in general this reduction is not computationally efficient.
+  Finally, using additional ideas from online learning, we design the first efficient co-training algorithms with label complexity $\tilde{O}(d^2\log (1/\epsilon))$ for several concept classes,
+  including unions of intervals and homogeneous halfspaces.
+  </div>
+  </li>
+
+  <br>
   <li> <b> SQ Lower Bounds for Non-Gaussian Component Analysis with Weaker Assumptions </b>
   <a class= 'abstract_link' onclick= "reveal_abstract('paper5abs')">[abstract]</a>
   <br> <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
@@ -70,7 +98,7 @@
     Lisheng Ren,
     and
     <a href="https://pages.cs.wisc.edu/~yxsun/">Yuxin Sun</a>
-  <br> <i> To appear in Advances in Neural Information Processing Systems (NeurIPS 2023) </i>
+  <br> <i> Neural Information Processing Systems (NeurIPS 2023) </i>
   <div id="paper5abs" style="display:none" class='abstract'>
   We study the complexity of Non-Gaussian Component Analysis (NGCA) in the Statistical Query (SQ) model.
   Prior work developed a methodology to prove SQ lower bounds for NGCA that have been applicable to a wide range of contexts.
