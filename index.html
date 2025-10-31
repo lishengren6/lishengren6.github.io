@@ -63,6 +63,49 @@
 
 <h2 style="clear: both;">Publications</h2>
 <ol>
+  <li> <b> Algorithms and SQ Lower Bounds for Robustly Learning Real-valued Multi-Index Models </b>
+  <a class= 'abstract_link' onclick= "reveal_abstract('paper11abs')">[abstract]</a>
+  <a href="https://arxiv.org/abs/2505.21475">[arxiv]</a>
+  <br>
+    <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>,
+    Ioannis Iakovidis,
+    <a href="https://cseweb.ucsd.edu/~dakane/">Daniel M. Kane</a> and
+    Lisheng Ren
+  <br> <i> Advances in Neural Information Processing Systems (NeurIPS 2025) </i>
+  <br> Selected for <b> Spotlight Presentationn </b>
+  <div id="paper11abs" style="display:none" class='abstract'>
+    We study the complexity of learning real-valued Multi-Index Models (MIMs)
+    under the Gaussian distribution.
+    A $K$-MIM is a function $f:\mathbb{R}^d\to \mathbb{R}$ that depends only on the
+    projection of its input onto a $K$-dimensional subspace.
+    We give a general algorithm for PAC learning a broad class
+    of MIMs with respect
+    to the square loss, even in the presence of adversarial label noise. Moreover,
+    we establish a nearly matching Statistical Query (SQ) lower
+    bound, providing evidence that the complexity of our
+    algorithm is qualitatively optimal as a function of the
+    dimension. Specifically, we consider the class of bounded variation MIMs
+    with the property that degree at most $m$ distinguishing
+    moments exist with respect to projections onto any subspace.
+    In the presence of adversarial label noise, the complexity of
+    our learning algorithm is $d^{O(m)}2^{\mathrm{poly}(K/\epsilon)}$.
+    For the realizable and independent noise settings,
+    our algorithm incurs complexity $d^{O(m)}2^{\mathrm{poly}(K)}(1/\epsilon)^{O(K)}$.
+    To complement our upper bound, we show that if for some subspace
+    degree-$m$ distinguishing moments do not exist, then any
+    SQ learner for the corresponding class of MIMs
+    requires complexity $d^{\Omega(m)}$.
+    As an application, we give
+    the first efficient learner for the class of positive-homogeneous
+    $L$-Lipschitz $K$-MIMs. The resulting algorithm has complexity
+    $\mathrm{poly}(d) 2^{\mathrm{poly}(KL/\epsilon)}$. This gives a new PAC learning algorithm
+    for Lipschitz homogeneous ReLU networks with complexity
+    independent of the network size, removing the exponential dependence
+    incurred in prior work.
+  </div>
+  </li>
+
+  <br>
   <li> <b> Faster Algorithms for Agnostically Learning Disjunctions and their Implications </b>
   <a class= 'abstract_link' onclick= "reveal_abstract('paper10abs')">[abstract]</a>
   <a href="https://arxiv.org/abs/2504.15244">[arxiv]</a>
